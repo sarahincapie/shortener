@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h3>We shortened-it </h3>
+
+<p>This is your shortened link :) Use it! <%= link_to short_url(@short), short_url(@short) %></p>
+
+<p> Unshortened Link <%= link_to @short.long, @short.long %></p>
+
+<p><%= link_to 'Use shorten-it again', new_short_path %></p> 
